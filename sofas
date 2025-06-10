@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofa Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ca7474;
+      color: #dfd8d8;
+    }
+    header {
+      background-color: #dac7c7;
+      color: rgb(7, 10, 20);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: rgb(218, 221, 228);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 0;
+    }
+    .price {
+      color: #e63946;
+      font-weight: 600;
+    }
+    .add-to-cart {
+      margin-top: 10px;
+      padding: 0.5rem 1rem;
+      background-color: #457b9d;
+      color: black;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .add-to-cart:hover {
+      background-color: #1d3557;
+    }
+    .contact {
+      padding: 2rem;
+      background: rgb(31, 31, 32);
+      margin: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .contact button {
+      background: #e63946;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: black;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modern Sofa Collection</h1>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <img src="https://i.postimg.cc/fWfxC5mB/pexels-the-ghazi-2152398165-32269118.jpg" alt="Elegant Beige Sofa">
+      <div class="card-content">
+        <h3>Beige Fabric Sofa</h3>
+        <p>Minimalist design .</p>
+        <p class="price">₹15,999</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+     <img src="https://i.postimg.cc/7h6bmPMM/sven-brandsma-GZ5c-KOge-IB0-unsplash.jpg" alt="Sofa">
+      <div class="card-content">
+        <h3>Sofa</h3>
+        <p>L-shaped comfort with textured finish.</p>
+        <p class="price">₹16,999</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://i.postimg.cc/fWVNjqGh/pexels-curtis-adams-1694007-6510974.jpg" alt="Sofa 2">
+      <div class="card-content">
+        <h3>Corner Set Sofa</h3>
+        <p>L-shaped comfort with textured finish.</p>
+        <p class="price">₹17,999</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://i.postimg.cc/rsMwz1pp/pexels-curtis-adams-1694007-8583594.jpg" alt="Sofa 2">
+      <div class="card-content">
+        <h3>3+1+1 Set Sofa</h3>
+        <p>comfort with textured finish.</p>
+        <p class="price">₹21,999</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://i.postimg.cc/15XNKBvh/pexels-olly-3757055.jpg" alt="Sofa 2">
+      <div class="card-content">
+        <h3>white Sofa</h3>
+        <p>comfort with textured finish.</p>
+        <p class="price">₹12,999</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="Murugan" placeholder="your name" required>
+      <input type="email" name="krishnananirudh54@gmail.com" placeholder="your email" required>
+      <textarea name="+91 6384708089" rows="1" placeholder="your phone number"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Sofa Studio. All rights reserved.
+  </footer>
+</body>
+</html>
